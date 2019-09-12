@@ -58,10 +58,10 @@ def get_auth_code(
         element.send_keys(password)
         element.send_keys(Keys.RETURN)
 
-        element = WebDriverWait(driver, time_wait).until(
-            EC.element_to_be_clickable((By.ID, "idBtn_Accept"))
-        )
-        element.send_keys(Keys.RETURN)
+        #element = WebDriverWait(driver, time_wait).until(
+        #    EC.element_to_be_clickable((By.ID, "idBtn_Accept"))
+        #)
+        #element.send_keys(Keys.RETURN)
 
         location = driver.current_url
         driver.close()
